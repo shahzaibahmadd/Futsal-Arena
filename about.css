@@ -1,0 +1,31 @@
+/* Specific styles for the about page */
+main {
+    padding: 20px;
+    background: #3b9a78;
+    color: #1de800;
+    text-align: center;
+}
+
+h2 {
+    color: #1de800;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns children (images) at the start of the container */
+    align-items: center; /* Aligns children vertically in the center */
+    margin-top: 20px; /* Adds some space between the text and the images */
+}
+
+.about-image {
+    display: inline-block; /* This can actually be removed if using flex in the container */
+    max-width: 30%; /* Slightly less than half to fit side by side without wrapping */
+    margin-right: 15%; /* Adds a small gap between the images */
+    height: auto; /* Maintains aspect ratio */
+}
+
+#about-h2{
+    color: #ffffff;
+}
+

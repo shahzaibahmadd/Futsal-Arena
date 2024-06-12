@@ -1,0 +1,54 @@
+/* Specific styles for the home page */
+main {
+    padding: 20px;
+    
+    color: #333;
+}
+body{
+    background-image: url('images/background.jpg'); /* Adjust the path as necessary */
+    background-size: cover; /* Cover ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+}
+
+
+.forms-container {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form, .register-form {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: #333;
+    color: #1de800;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #1de800;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+

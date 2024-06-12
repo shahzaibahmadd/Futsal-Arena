@@ -1,0 +1,244 @@
+/* General body styles */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;  /* Ensures that the html and body tags cover the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    width: 100%;  /* Ensures that the html and body tags cover the full width of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #38303ec2;
+}
+
+h1{
+    color: #ffffff;
+    text-align: left;
+    padding-left: 10px;
+   
+}
+
+body {
+    background: url('images/kalabg1.jpg') no-repeat center center/cover ; /* Make sure this path is correct */
+    background-size: cover; /* Covers the entire area of the element */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    flex: 1; /* Allows the body to grow to accommodate content but not shrink below the viewport */
+} 
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;  /* Adjust padding as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;  /* Creates space between menu items */
+}
+
+.auth-links {
+    display: flex;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;  /* Space between login and register buttons */
+    background-color: #4CAF50;  /* Example background color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a0b0a;  /* Darker shade on hover */
+}
+
+.site-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;  /* Ensures that the content area can expand */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #38303ec2;
+    color: #fff;
+
+}
+
+/* Navigation menu styles */
+nav {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the start and end of the nav bar */
+    align-items: center; /* Centers items vertically */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Ensures no default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a, nav ul li button {
+    background: none; /* Removes any background */
+    border: none; /* Removes borders */
+    color:#ffffff;
+    text-decoration: none;
+    padding: 8px 16px; /* Smaller padding */
+    font-size: 16px; /* Adjust size as needed */
+    cursor: pointer;
+}
+
+/* Additional container for right-aligned buttons */
+.right-nav {
+    margin-right: 20px; /* Gives some space from the right */
+}
+
+
+
+/* Forms Container */
+.forms-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.form {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: #050505;
+    color: #1de800;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #1de800;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+/* Specific styling for buttons to make them visually lighter */
+button {
+    background: transparent; /* Transparent background */
+    color: inherit; /* Inherits color from parent, easier to manage */
+    border: 1px solid #1de800; /* Adds a subtle border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 12px; /* Smaller than links for distinct appearance */
+    font-size: 0.8rem; /* Smaller font size */
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+main {
+    padding: 20px;
+    background-size: cover; /* Cover ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    color: #ffffff;
+    height: 500px;
+    text-align: center;
+    
+    
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as necessary */
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px; /* Adds space between the inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9; /* Button feedback on hover */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    align-items: center; /* Align contents in center vertically */
+    justify-content: center; /* Align contents in center horizontally */
+}
+
+main h2 {
+    color: #ffffff; /* Sets the color of the main heading text to blue */
+    font-size: 36px; /* Increases the font size of the heading */
+}
+
+main p {
+    color:#ffffff; /* Sets the color of the paragraph text in main to blue */
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    font-style: normal;
+
+
+}

@@ -1,0 +1,176 @@
+/* General body styles */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url('images/kalabg1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background-color: #38303ec2; /* Consistent with style.css */
+    color: #fbfefb;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+    padding-left: 10px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    font-style: normal;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    font-style: normal;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #0e0e0e; /* Changes color to green on hover */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.booking-container {
+    background-color: #050505;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.booking-form label {
+    display: block;
+    margin-top: 20px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="date"],
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #1de800;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.booking-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #367c39;
+}
+
+.success {
+    color: green;
+    background-color: #ccffcc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.error {
+    color: red;
+    background-color: #ffcccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.availability-table {
+    margin-top: 20px;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    background-color: #050505;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.availability-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.availability-table th, .availability-table td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+.availability-table th {
+    background-color: #555;
+}
+
+.availability-table tr:nth-child(even) {
+    background-color: #666;
+}
+
+.availability-table tr:nth-child(odd) {
+    background-color: #777;
+}
+
+.availability-table .booked {
+    background-color: #ff4c4c; /* Brighter red for booked slots */
+}
+
+.availability-table .available {
+    background-color: #28a745; /* Darker green for available slots */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #0c0c0c;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
